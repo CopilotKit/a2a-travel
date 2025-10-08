@@ -200,7 +200,7 @@ skill = AgentSkill(
     ],
 )
 
-cardUrl = os.getenv("RENDER_EXTERNAL_HOSTNAME", f"localhost:{port}")
+cardUrl = os.getenv("RENDER_EXTERNAL_URL", f"http://localhost:{port}")
 public_agent_card = AgentCard(
     name='Weather Agent',
     description='ADK-powered agent that provides weather forecasts and packing advice for travelers',
