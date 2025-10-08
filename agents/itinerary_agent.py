@@ -200,10 +200,11 @@ skill = AgentSkill(
     ],
 )
 
+cardUrl = os.getenv("RENDER_EXTERNAL_HOSTNAME", f"localhost:{port}")
 public_agent_card = AgentCard(
     name='Itinerary Agent',
     description='LangGraph-powered agent that creates detailed day-by-day travel itineraries in plain text format with activities and meal recommendations.',
-    url=f'http://0.0.0.0:{port}/',
+    url=cardUrl,
     version='1.0.0',
     defaultInputModes=['text'],
     defaultOutputModes=['text'],

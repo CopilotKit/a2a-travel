@@ -198,10 +198,11 @@ skill = AgentSkill(
     ],
 )
 
+cardUrl = os.getenv("RENDER_EXTERNAL_HOSTNAME", f"localhost:{port}")
 public_agent_card = AgentCard(
     name='Budget Agent',
     description='ADK-powered agent that estimates travel budgets and creates cost breakdowns',
-    url=f'http://0.0.0.0:{port}/',
+    url=cardUrl,
     version='1.0.0',
     defaultInputModes=['text'],
     defaultOutputModes=['text'],
