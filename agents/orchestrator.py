@@ -119,5 +119,5 @@ if __name__ == "__main__":
         print()
 
     port = int(os.getenv("ORCHESTRATOR_PORT", 9000))
-    print(f"🚀 Starting Orchestrator Agent (ADK + AG-UI) on http://localhost:{port}")
+    print(f"🚀 Starting Orchestrator Agent (ADK + AG-UI) on http://0.0.0.0:{port}")
     uvicorn.run(app, host="0.0.0.0", port=port)

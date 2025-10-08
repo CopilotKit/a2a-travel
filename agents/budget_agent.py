@@ -201,7 +201,7 @@ skill = AgentSkill(
 public_agent_card = AgentCard(
     name='Budget Agent',
     description='ADK-powered agent that estimates travel budgets and creates cost breakdowns',
-    url=f'http://localhost:{port}/',
+    url=f'http://0.0.0.0:{port}/',
     version='1.0.0',
     defaultInputModes=['text'],
     defaultOutputModes=['text'],
@@ -250,7 +250,7 @@ def main():
         extended_agent_card=public_agent_card,
     )
 
-    print(f"💰 Starting Budget Agent (ADK + A2A) on http://localhost:{port}")
+    print(f"💰 Starting Budget Agent (ADK + A2A) on http://0.0.0.0:{port}")
     print(f"   Agent: {public_agent_card.name}")
     print(f"   Description: {public_agent_card.description}")
     uvicorn.run(server.build(), host='0.0.0.0', port=port)

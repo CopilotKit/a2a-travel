@@ -203,7 +203,7 @@ skill = AgentSkill(
 public_agent_card = AgentCard(
     name='Itinerary Agent',
     description='LangGraph-powered agent that creates detailed day-by-day travel itineraries in plain text format with activities and meal recommendations.',
-    url=f'http://localhost:{port}/',
+    url=f'http://0.0.0.0:{port}/',
     version='1.0.0',
     defaultInputModes=['text'],
     defaultOutputModes=['text'],
@@ -248,7 +248,7 @@ def main():
         extended_agent_card=public_agent_card,
     )
 
-    print(f"🗺️  Starting Itinerary Agent (LangGraph + A2A) on http://localhost:{port}")
+    print(f"🗺️  Starting Itinerary Agent (LangGraph + A2A) on http://0.0.0.0:{port}")
     uvicorn.run(server.build(), host='0.0.0.0', port=port)
 
 
