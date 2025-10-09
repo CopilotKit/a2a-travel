@@ -1,8 +1,9 @@
 # AG-UI + A2A Multi-Agent Communication Demo
 
+<img width="1600" height="1040" alt="How to Make Agents Talk to Each Other (and Your App) Using A2A + AG-UI (6)" src="https://github.com/user-attachments/assets/1bb698a1-d187-4666-b2c1-b558323de2c4" />
+
 A demonstration of Agent-to-Agent (A2A) communication between different AI agent frameworks using the AG-UI Protocol and A2A Middleware.
 
-![Screenshot of a demo](demo.png)
 
 ## Quick Start
 
